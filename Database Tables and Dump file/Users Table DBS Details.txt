@@ -1,0 +1,19 @@
+DROP TABLE users ;
+
+CREATE TABLE IF NOT EXISTS `users` (
+  
+`User_ID` int(10) NOT NULL AUTO_INCREMENT,
+  
+`User_Name` varchar(30) NOT NULL,
+  
+`Password` varchar(30) NOT NULL,
+`User_Image` varchar(200),
+PRIMARY KEY (`User_ID`) 
+
+)
+
+INSERT INTO `users` (`User_ID`, `User_Name`, `Password`) VALUES
+
+(30, 'Gavin', '1234'),
+(31, 'Lecturer', '1234'),
+(32, 'Thirdperson', '1234');

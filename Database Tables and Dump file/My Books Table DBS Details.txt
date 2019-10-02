@@ -1,0 +1,37 @@
+DROP TABLE my_books ;
+
+CREATE TABLE IF NOT EXISTS `my_books` (
+  
+`Book_ID` int(10) NOT NULL AUTO_INCREMENT,  
+`Book_Title` varchar(200) NOT NULL,
+  
+`Author` varchar(100) NOT NULL,
+
+`ISBN_Code` varchar(10) NOT NULL,
+
+`Genre` varchar(50) NOT NULL,
+`Book_Suggestion` varchar(50),
+PRIMARY KEY (`Book_ID`)
+
+)
+
+INSERT INTO my_books (`Book_ID`, `Book_Title`, `Author`, `ISBN_Code`, `Genre`) VALUES
+
+(1, 'All the Ugly and Wonderful Things', 'Bryn Greenwood', 'FIC001', 'Fiction'),
+
+(2, 'Don Quixote', 'Miguel de Cervantes Saavedra', 'FIC002', 'Fiction'),
+
+(6, 'The Merck Manual of Diagnosis and Therapy', 'Robert Berkow', 'REF001', 'Reference'),
+
+(7, 'Reverse Dictionary by Readers Digest Association', 'Various', 'REF002', 'Reference'),
+
+
+(11, 'The Diary of a Young Girl', 'Anne Frank', 'BIO001', 'Biography'),
+
+(12, 'John Adams', 'David McCullough', 'BIO002', 'Biography'),
+
+
+(16, 'Stitch and Bitch Crochet: The Happy Hooker', 'Debbie Stoller', 'HOB001', 'Hobby'),
+
+(17, 'The Joy of Cooking', 'Irma S. Rombauer', 'HOB002', 'Hobby');
+

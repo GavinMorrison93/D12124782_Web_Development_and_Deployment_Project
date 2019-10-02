@@ -1,0 +1,12 @@
+DROP TABLE suggestions ;
+
+CREATE TABLE IF NOT EXISTS `suggestions` (
+  
+`Suggestion_ID` int(10) NOT NULL AUTO_INCREMENT,  
+`Book_Title` varchar(200) NOT NULL,
+  
+`Author` varchar(100) NOT NULL,
+
+PRIMARY KEY (`Suggestion_ID`)
+
+)

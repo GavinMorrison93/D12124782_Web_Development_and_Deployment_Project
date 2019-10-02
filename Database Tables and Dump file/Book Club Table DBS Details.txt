@@ -1,0 +1,69 @@
+DROP TABLE book_items ;
+
+CREATE TABLE IF NOT EXISTS `book_items` (
+  
+`Book_ID` int(10) NOT NULL AUTO_INCREMENT,
+  
+`Book_Title` varchar(200) NOT NULL,
+  
+`Author` varchar(100) NOT NULL,
+
+`ISBN_Code` varchar(10) NOT NULL,
+
+`Genre` varchar(50) NOT NULL, 
+PRIMARY KEY (`Book_ID`),
+  
+UNIQUE KEY (`ISBN_Code`)
+
+)
+
+INSERT INTO book_items (`Book_ID`, `Book_Title`, `Author`, `ISBN_Code`, `Genre`) VALUES
+
+(1, 'All the Ugly and Wonderful Things', 'Bryn Greenwood', 'FIC001', 'Fiction'),
+
+(2, 'Don Quixote', 'Miguel de Cervantes Saavedra', 'FIC002', 'Fiction'),
+
+(3, 'Invisible Man', 'Ralph Ellison', 'FIC003', 'Fiction'),
+
+(4, 'Memoirs of a Geisha', 'Arthur Golden', 'FIC004', 'Fiction'),
+
+(5, 'The Pillars of the Earth', 'Ken Follett', 'FIC005', 'Fiction');
+
+
+
+INSERT INTO book_items (`Book_ID`, `Book_Title`, `Author`, `ISBN_Code`, `Genre`) VALUES
+
+(6, 'The Merck Manual of Diagnosis and Therapy', 'Robert Berkow', 'REF001', 'Reference'),
+
+(7, 'Reverse Dictionary by Readers Digest Association', 'Various', 'REF002', 'Reference'),
+
+(8, 'Dictionary of Slang', 'Jonathon Green', 'REF003', 'Reference'),
+
+(9, 'Concise Oxford thesaurus', 'E.M. Kirkpatrick', 'REF004', 'Reference'),
+(10, 'Dictionary of Architecture and Construction', 'Cyril M. Harris', 'REF005', 'Reference');
+
+
+INSERT INTO book_items (`Book_ID`, `Book_Title`, `Author`, `ISBN_Code`, `Genre`) VALUES
+
+(11, 'The Diary of a Young Girl', 'Anne Frank', 'BIO001', 'Biography'),
+
+(12, 'John Adams', 'David McCullough', 'BIO002', 'Biography'),
+
+(13, 'The Immortal Life of Henrietta Lacks', 'Rebecca Skloot', 'BIO003', 'Biography'),
+
+(14, 'The Autobiography of Malcolm X', 'Malcolm X', 'BIO004', Biography),
+(15, 'Catherine the Great: Portrait of a Woman', 'Robert K. Massie', 'BIO005', 'Biography');
+
+
+
+INSERT INTO book_items (`Book_ID`, `Book_Title`, `Author`, `ISBN_Code`, `Genre`) VALUES
+
+
+(16, 'Stitch and Bitch Crochet: The Happy Hooker', 'Debbie Stoller', 'HOB001', 'Hobby'),
+
+(17, 'The Joy of Cooking', 'Irma S. Rombauer', 'HOB002', 'Hobby'),
+
+(18, 'The Digital Photography Book', 'Scott Kelby', 'HOB003', 'Hobby'),
+(19, 'The Complete Book of Essential Oils and Aromatherapy', 'Valerie Ann Worwood', 'HOB004', 'Hobby'),
+
+(20, 'The Complete Joy of Homebrewing', 'Charles Papazian', 'HOB005', 'Hobby');
